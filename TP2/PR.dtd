@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT PR (header,workteam,abstract,derivables) >
+
+<!ELEMENT header (titulo,subtitulo?,beginning_date, end_date, supervisor) >
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT beginning_date (#PCDATA)>
+<!ELEMENT end_date (#PCDATA)>
+<!ELEMENT supervisor (#PCDATA)>
+<!ATTLIST supervisor
+    link CDATA #IMPLIED>
+
+<!ELEMENT workteam (elemento)+ >
+<!ELEMENT elemento (nome, numero, mail) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT numero (#PCDATA) >
+<!ELEMENT mail (#PCDATA) >
+<!ATTLIST mail
+    link CDATA #REQUIRED>
+
+<!ELEMENT abstract (paragrafo)+ >
+<!ELEMENT paragrafo (conteudo | link_interno | link_externo)+ >
+<!ELEMENT conteudo (#PCDATA)>
+<!ATTLIST conteudo 
+    tipo (negrito|italico|sublinhado|normal) "normal" >
+<!ELEMENT link_interno (#PCDATA) >
+<!ATTLIST link_interno
+    link IDREF #REQUIRED>
+<!ELEMENT link_externo (#PCDATA) >
+<!ATTLIST link_externo
+    link CDATA #REQUIRED>
+    
+<!ELEMENT derivables (item)+ >
+<!ELEMENT item (#PCDATA) >
+<!ATTLIST item 
+    link CDATA #REQUIRED>    
+    
+
+    
+    
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PR SYSTEM "PR.dtd">
+<PR>
+    <header>
+        <titulo>Relatório do TP2</titulo>
+        <beginning_date>19/10/2020</beginning_date>
+        <end_date>25/10/2020</end_date>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/">José Ramalho</supervisor>
+    </header>
+    <workteam>
+        <elemento>
+            <nome>João Pedro Rodrigues Gomes</nome>
+            <numero>A82238</numero>
+            <mail link="My Email">a82238@alunos.uminho.pt</mail>
+        </elemento>
+    </workteam>
+    <abstract>
+        <paragrafo>
+            <conteudo tipo="normal">Para este TPC, tivemos de escrever um DTD que modulasse Public Records. </conteudo>
+        </paragrafo>
+    </abstract>
+    <derivables>
+        <item link="./PR.dtd">DTD correspondente</item>
+    </derivables>
+</PR>
