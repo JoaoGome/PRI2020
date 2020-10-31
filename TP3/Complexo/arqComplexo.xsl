@@ -58,14 +58,14 @@
                     <p><b>Freguesia:</b> <xsl:value-of select="FREGUE"/></p>
                     <p><b>Concelho:</b> <xsl:value-of select="CONCEL"/></p>
                     
-                    <address>[<a href="./tabsite2/{generate-id()}.html">Mais Informações</a>]</address>
+                    <address>[<a href="./maisInformacoes/{generate-id()}.html">Mais Informações</a>]</address>
                     <address>[<a href="index.html">Voltar ao índice</a>]</address>
                 </body>
             </html>
             
         </xsl:result-document>
         
-        <xsl:result-document href="tabsite/tabsite2/{generate-id()}.html">
+        <xsl:result-document href="tabsite/maisInformacoes/{generate-id()}.html">
             <html>
                 <head>
                     <title>Informações sobre <xsl:value-of select="IDENTI"/></title>
@@ -76,8 +76,25 @@
                     <p><b>Longitutude:</b> <xsl:value-of select="LONGIT"/></p>
                     <p><b>Altitude:</b> <xsl:value-of select="ALTITU"/></p>
                     <p><b>Acesso:</b> <xsl:value-of select="ACESSO"/></p>
+                    <address>[<a href="./Bibliografias/{generate-id()}.html">Bibliografia</a>]</address>
                     <address>[<a href="../{generate-id()}.html">Recuar</a>]</address>
                     <address>[<a href="../index.html">Voltar ao índice</a>]</address>
+                </body>
+            </html>
+        </xsl:result-document>
+        
+        <xsl:result-document href="tabsite/maisInformacoes/Bibliografias/{generate-id()}.html">
+            <html>
+                <head>
+                    <title>Bibliografia</title>
+                </head>
+                
+                <body>
+                    <xsl:for-each select="BIBLIO">
+                        <p><b>Biblio:</b> <xsl:value-of select="text()"/></p>
+                    </xsl:for-each>
+                    <address>[<a href="../{generate-id()}.html">Recuar</a>]</address>
+                    <address>[<a href="../../index.html">Voltar ao índice</a>]</address>
                 </body>
             </html>
         </xsl:result-document>
