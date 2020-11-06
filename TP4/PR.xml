@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../PRexemplo.dtd">
+<pr>
+    <meta>
+        <key>PRI:TPC4</key>
+        <title>TPC4</title>
+        <subtitle></subtitle>
+        <bdate>02/10/2020</bdate>
+        <edate>09/10/2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="A82238">
+            <name>João Pedro Rodrigues Gomes</name>
+            <email>a82238@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Neste TPC4, foi-nos pedido para voltar a implementar um xsl que convertesse o ficheiro <i>arq.xml</i> numa série de ficheiros <i>html</i>. Foi-nos também pedido para implementar um servidor em <i>javascript</i> que tratasse dos pedidos para aceder aos <i>htmls</i> criados. </p>
+    </abstract>
+    <deliverables>
+        <link url="./server.js">Servidor em javascript</link>
+        <link url="./arq.xml">Ficheiro xml dos arquessítios</link>
+        <link url="./arq.xsl">Ficheiro xsl usado para transformar o xml</link>
+    </deliverables>
+</pr>
