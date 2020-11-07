@@ -48,10 +48,16 @@
                 </head>
                 
                 <body>
-                    <p><b>Nome:</b> <xsl:value-of select="IDENTI"/></p>
-                    <p><b>Lugar:</b> <xsl:value-of select="LUGAR"/></p>
-                    <p><b>Freguesia:</b> <xsl:value-of select="FREGUE"/></p>
-                    <p><b>Concelho:</b> <xsl:value-of select="CONCEL"/></p>
+                    <dl>
+                        <xsl:for-each select="./*">
+                            <dt>
+                                <xsl:value-of select="name(.)"/>
+                            </dt>
+                            <dd>
+                                <xsl:value-of select="."/>
+                            </dd>
+                        </xsl:for-each>
+                    </dl>
                 </body>
             </html>
             
