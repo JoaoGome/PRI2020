@@ -33,8 +33,9 @@
     <!-- templates para o indice ......................... -->
     
     <xsl:template match="ARQELEM" mode ="indice">
+        <xsl:variable name="i" select="position()"/>
         <li>
-            <a href="/arqs/{position()}">
+            <a href="http://localhost:7777/arqs/{$i}">
                 <xsl:value-of select="IDENTI"/>
                 -
                 <xsl:value-of select="CONCEL"/>
