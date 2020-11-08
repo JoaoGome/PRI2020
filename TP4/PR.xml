@@ -17,6 +17,8 @@
     </workteam>
     <abstract>
         <p>Neste TPC4, foi-nos pedido para voltar a implementar um xsl que convertesse o ficheiro <i>arq.xml</i> numa série de ficheiros <i>html</i>. Foi-nos também pedido para implementar um servidor em <i>javascript</i> que tratasse dos pedidos para aceder aos <i>htmls</i> criados. </p>
+        <p>A primeira parte foi bastante fácil de realizar uma vez que foi apenas necessário realizar uma pequena alteração no xsl da semana anterior. Esta mudança foi fazer com que o link do indice realizasse uma chamada ao servidor</p>
+        <p>A segunda parte foi realizar um servidor em javascript que recebe pedidos do cliente para visualizar um dado arqueossítio e devolve o html correspondente</p>
     </abstract>
     <deliverables>
         <link url="./server.js">Servidor em javascript</link>
