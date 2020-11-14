@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../PRexemplo.dtd">
+<pr>
+    <meta>
+        <key>PRI:TPC5</key>
+        <title>TPC5</title>
+        <subtitle></subtitle>
+        <bdate>09/10/2020</bdate>
+        <edate>16/10/2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="A82238">
+            <name>João Pedro Rodrigues Gomes</name>
+            <email>a82238@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Neste TPC5, tivemos de ter dois servidores a correr simultaneamente. Um servidor json-server, ligado na porta 3000, que fazia a ligação direta ao ficheiro <b>db.json</b>, que contém as informações sobre a escola de música.</p>
+        <p>Tivemos também de implementar um servidor local, na porta 3001, com o qual o cliente interagiria. À medida que os pedidos dos clientes chegassem, este servidor fazia pedidos ao servidor json-server. Após este responder ao pedido com os dados pedidos, o nosso servidor manipulava os dados e apresentava-os ao cliente na forma de uma pagina WEB.</p>
+    </abstract>
+    <deliverables>
+        <link url="./app.js">Servidor em javascript.</link>
+        <link url="./db.json">Base de dados com as informações da escola de música.</link>
+    </deliverables>
+</pr>
