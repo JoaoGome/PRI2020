@@ -1,0 +1,46 @@
+{
+  "tarefas": [
+    {
+      "id": "1",
+      "designacao": "Estudar PRI",
+      "prazo": "2020-12-12",
+      "responsavel": "João",
+      "status": "finished"
+    },
+    {
+      "id": "2",
+      "designacao": "Perder Peso",
+      "prazo": "2021-01-01",
+      "responsavel": "Ricardo",
+      "status": "cancelled"
+    },
+    {
+      "id": "3",
+      "designacao": "Aprender instrumento",
+      "prazo": "2022-12-10",
+      "responsavel": "Maria",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "designacao": "Correr Maratona",
+      "prazo": "2023-01-01",
+      "responsavel": "Adelaide",
+      "status": "finished"
+    },
+    {
+      "id": "5",
+      "designacao": "Comprar prenda Natal",
+      "prazo": "2020-12-23",
+      "responsavel": "Inês",
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "designacao": "Comprar prenda Natal",
+      "prazo": "2020-12-23",
+      "responsavel": "Mário",
+      "status": "active"
+    }
+  ]
+}

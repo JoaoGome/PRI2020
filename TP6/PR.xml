@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../PRexemplo.dtd">
+<pr>
+    <meta>
+        <key>PRI:TPC6</key>
+        <title>TPC6</title>
+        <subtitle></subtitle>
+        <bdate>16/10/2020</bdate>
+        <edate>23/10/2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="A82238">
+            <name>João Pedro Rodrigues Gomes</name>
+            <email>a82238@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O TPC6 consistiu em, numa página web só, implementar um sistema de registo e visualização de "toDo lists". Para tal, tivemos de ter dois servidores a correr simultaneamente. Um servidor json-server, ligado na porta 3000, que fazia a ligação direta ao ficheiro <b>db.json</b>, que contém as informações sobre as tarefas da toDo List.</p>
+        <p>Tivemos também de implementar um servidor local, na porta 7777, com o qual o cliente interagiria. À medida que os pedidos dos clientes chegassem, este servidor fazia pedidos ao servidor json-server. Após este responder ao pedido com os dados pedidos, o nosso servidor manipulava os dados e apresentava-os ao cliente na forma de uma pagina WEB.</p>
+        <p>Tivemos de separar o conteúdo da base de dados em duas tabelas diferentes, uma para as tarefas ainda em execução e outra para as tarefas já terminadas.</p>
+        <p> O sistema de registo foi feito usando form de html em conjunto com um POST request que depois seria handled pelo nosso servidor. </p>
+        <p> Outra funcionalidade é a possibilidade de terminar ou cancelar uma tarefa que ainda esteja em execução. Estas funcionalidades foram usadas fazendo uso de vários requests. Primeiro, fazemos um GET request para ir buscar a informação da tarefa a alterar. De seguida, fazemos um PUT request com a informação dessa tarefa já alterada.</p>
+    </abstract>
+    <deliverables>
+        <link url="./app.js">Servidor em javascript.</link>
+        <link url="./db.json">Base de dados com as informações da escola de música.</link>
+        <link url="./w3.css">Stylesheet.</link>
+    </deliverables>
+</pr>
