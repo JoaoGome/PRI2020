@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../PRexemplo.dtd">
+<pr>
+    <meta>
+        <key>PRI:TPC7</key>
+        <title>TPC7</title>
+        <subtitle></subtitle>
+        <bdate>23/10/2020</bdate>
+        <edate>30/10/2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="A82238">
+            <name>João Pedro Rodrigues Gomes</name>
+            <email>a82238@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O TPC7 consistiu em voltar a implementar um sistema de registo de alunos e da sua informação, mas desta vez recorrendo à framework Express e ao mongoDB como database.</p>
+        <p>Tivemos de aprender a lidar com os requests GET,POST,PUT e DELETE através do Express e não do axios como até agora. Tivemos também de aprender a fazer a ligação à base de dados através do mongoose e não do json-server.</p>
+        <p>Por fim, tivemos também de aprender a trabalhar com templates pug para gerar as páginas html.</p>
+    </abstract>
+    <deliverables>
+        <link url="./app.js">Servidor em javascript com framework Express.</link>
+        <link url="./PRI2020.json">Ficheiro com informações dos alunos.</link>
+    </deliverables>
+</pr>

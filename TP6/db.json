@@ -33,13 +33,34 @@
       "designacao": "Comprar prenda Natal",
       "prazo": "2020-12-23",
       "responsavel": "Inês",
-      "status": "active"
+      "status": "finished"
     },
     {
       "id": "6",
       "designacao": "Comprar prenda Natal",
       "prazo": "2020-12-23",
       "responsavel": "Mário",
+      "status": "cancelled"
+    },
+    {
+      "id": "7",
+      "designacao": "Fazer encomenda bolo rei",
+      "prazo": "2020-12-15",
+      "responsavel": "Sofi",
+      "status": "active"
+    },
+    {
+      "id": "8",
+      "designacao": "Pagar conta Vodafone",
+      "prazo": "2020-12-15",
+      "responsavel": "Dulce",
+      "status": "cancelled"
+    },
+    {
+      "id": "9",
+      "designacao": "Comprar phone",
+      "prazo": "2020-11-29",
+      "responsavel": "Eduard",
       "status": "active"
     }
   ]
