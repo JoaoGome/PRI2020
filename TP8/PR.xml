@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../PRexemplo.dtd">
+<pr>
+    <meta>
+        <key>PRI:TPC8</key>
+        <title>TPC8</title>
+        <subtitle></subtitle>
+        <bdate>30/11/2020</bdate>
+        <edate>06/12/2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="A82238">
+            <name>João Pedro Rodrigues Gomes</name>
+            <email>a82238@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O TPC8 consistiu em pegar no servidor de upload de ficheiros singulares feito na aula com o professor e implementar a funcionalidade de permitir fazer upload simultaneamente de vários ficheiros.</p>
+        <p>Para tal, tivemos de fazer umas pequenas alterações ao html para permitir o upload de varios ficheiros. Isto foi feito recorrendo ao <b>Jquery</b>.</p>
+        <p>Por fim, tivemos de alterar a secção que fazia o tratamento dos ficheiros. Anteriormente só tinhamos de tratar de um ficheiro enquanto que agora podiamos receber vários ficheiros. Para isto, basta usar a opção <b>.array</b> do <b>multer</b> que faz com que os dados sejam guardados na estrutura req.files. Depois resta fazer o tratamento individual de cada ficheiro que se encontre na estrutura req.files.</p>
+    </abstract>
+    <deliverables>
+        <link url="./server.js"></link>
+        <link url="./dbFiles.json">Ficheiro com informações dos alunos...</link>
+    </deliverables>
+</pr>
